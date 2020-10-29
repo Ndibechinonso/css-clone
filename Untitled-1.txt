@@ -1,0 +1,28 @@
+ul {position: relative;
+    width: 100%;
+    min-width: 100%;
+    border: 1px solid #415839;
+    background-color: #415839;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 20px;
+    
+}
+
+ul li {
+    position: relative;
+    width: 100%;
+    border: 1px solid #415839;
+    background-color: #415839;
+    border-right: 1px solid white;
+    padding-right: 90px;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    display: inline;
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'Mitr', sans-serif;
+    font-size: 30px;
+    color: white;
+}

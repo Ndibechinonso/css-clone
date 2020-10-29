@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+body {
+    background-color: white;
+}
+
+h1 {
+    position: relative;
+    width: 100%;
+    border: 1px solid #34492D;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #193B0C;
+    color: #E5FFCC;
+    font-size: 90px;
+    font-family: Nunita, sans-serif;
+}
+
+.list1 {
+    grid-area: Home;
+}
+
+.list2 {
+    grid-area: beginner;
+}
+
+.list3 {
+    grid-area: Intermediate;
+}
+
+.list4 {
+    grid-area: Contact;
+}
+
+.list5 {
+    grid-area: About;
+}
+
+.last-list {
+    grid-area: empty;
+}
+
+.lists {
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr) 0.5fr;
+    font-size: 30px;
+    color: white;
+    background-color: yellow;
+    grid-template-areas: "Home beginner Intermediate Contact About empty";
+}
+
+nav ul {min-width: 70%;
+
+}
+nav ul li {
+    border-right: 1px solid white;
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Mitr', sans-serif;
+    font-size: 30px;
+    background-color: #415839;
+}
+
+@media (max-width: 800px) {
+    .lists{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); 
+        grid-template-areas: 
+            "Home"
+            "beginner"
+            "Intermediate"
+            "Contact"
+            "About"
+            "empty";
+}
+    nav ul li {
+        border-bottom: 1px solid white;
+}
+}
+
+.last-list {
+    border-right: 1px solid #415839;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+  .box { 
+    position: relative;
+    background-color: #7AAB70 ;
+    width: 15%;
+}
+
+hr {
+    position: absolute;
+    width: 69%;
+    margin-left: 10px;
+    color: red;
+}
+
+hr.new1 {
+    border-top: 2px solid purple;
+    width: 40%;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+ .center {
+    background-color: white;
+    width: 70%;
+}
+
+.header1 {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    color:#BF60F6; 
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Actor', sans-serif;
+}
+
+.header2 {
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    color:  #1989A7;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 5px;
+    color: rgb(249, 5, 5);
+    font-size: 28px;
+}
+
+p {
+    width: 99%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+}
